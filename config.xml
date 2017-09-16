@@ -74,6 +74,7 @@
         <allow-navigation href="*" />
     </platform>
     <engine name="android" spec="~6.2.3" />
+    <engine name="ios" spec="^4.4.0" />
     <plugin name="cordova-plugin-splashscreen" spec="~3.2.1" />
     <plugin name="cordova-plugin-whitelist" spec="~1.2.1" />
 </widget>
