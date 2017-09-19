@@ -29,7 +29,7 @@ var app = {
     onDeviceReady: function() {
         //this.receivedEvent('deviceready');
         window.open = cordova.InAppBrowser.open;
-        cordova.InAppBrowser.open('https://m.tinydeal.com/amp', '_self', 'location=no,clearsessioncache=no,clearcache=no,zoom=no');
+        cordova.InAppBrowser.open('https://m.tinydeal.com/amp', '_blank', 'location=no,clearsessioncache=no,clearcache=no,zoom=no');
     },
 
     // Update DOM on a Received Event
