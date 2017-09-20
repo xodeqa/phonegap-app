@@ -27,20 +27,7 @@ var app = {
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
-<<<<<<< HEAD
         this.receivedEvent('deviceready');
-
-				// Here, we redirect to the web site.
-        var targetUrl = "https://m.poplaser.com/amp";
-        var bkpLink = document.getElementById("bkpLink");
-        bkpLink.setAttribute("href", targetUrl);
-        bkpLink.text = targetUrl;
-        window.location.replace(targetUrl);
-=======
-        //this.receivedEvent('deviceready');
-        window.open = cordova.InAppBrowser.open;
-        cordova.InAppBrowser.open('https://m.tinydeal.com/amp', '_blank', 'location=no,clearsessioncache=no,clearcache=no,zoom=no');
->>>>>>> 4caeeec4b5fcd8456ade8e74e51ee679862a01d6
     },
 
     // Update DOM on a Received Event
