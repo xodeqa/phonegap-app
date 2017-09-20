@@ -30,7 +30,7 @@ var app = {
         this.receivedEvent('deviceready');
 
 				// Here, we redirect to the web site.
-        var targetUrl = "https://cordovahostedweb-starter.azurewebsites.net";
+        var targetUrl = "https://m.tinydeal.com/";
         var bkpLink = document.getElementById("bkpLink");
         bkpLink.setAttribute("href", targetUrl);
         bkpLink.text = targetUrl;

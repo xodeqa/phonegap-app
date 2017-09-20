@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.tinydeal.m" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>mApp</name>
+    <name>TinyDeal</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
@@ -8,6 +8,20 @@
         Apache Cordova Team
     </author>
     <content src="index.html" />
+    <platform name="android">
+        <icon density="ldpi" src="res/icon/android/icon-36-ldpi.png" />
+        <icon density="mdpi" src="res/icon/android/icon-48-mdpi.png" />
+        <icon density="hdpi" src="res/icon/android/icon-72-hdpi.png" />
+        <icon density="xhdpi" src="res/icon/android/icon-96-xhdpi.png" />
+        <icon density="xxhdpi" src="res/icon/android/icon-144-xxhdpi.png" />
+        <icon density="xxxhdpi" src="res/icon/android/icon-192-xxxhdpi.png" />
+    </platform>
+    <platform name="ios">
+        <icon height="57" platform="ios" src="res/icon/ios/icon-57.png" width="57" />
+        <icon height="114" platform="ios" src="res/icon/ios/icon-57-2x.png" width="114" />
+        <icon height="72" platform="ios" src="res/icon/ios/icon-72.png" width="72" />
+        <icon height="144" platform="ios" src="res/icon/ios/icon-72-2x.png" width="144" />
+    </platform>
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
