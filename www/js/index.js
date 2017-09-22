@@ -16,6 +16,24 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+function onOnline() {
+  // Handle the online event
+  var networkState = navigator.connection.type;
+  if (networkState !== Connection.NONE) {
+    tryToRender();
+  }
+}
+function onOffline() {
+  // Handle the offline event
+  console.log("lost connection");
+  alert("lost connection, please check your network setting ...");
+}
+function tryToRender() {
+  console.log('ready');
+  // Here, we redirect to the web site.
+  var targetUrl = "https://m.tinydeal.com/";
+  window.location.replace(targetUrl);
+}
 var app = {
     // Application Constructor
     initialize: function() {
@@ -29,12 +47,15 @@ var app = {
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
 
-				// Here, we redirect to the web site.
-        var targetUrl = "https://m.tinydeal.com/";
-        var bkpLink = document.getElementById("bkpLink");
-        bkpLink.setAttribute("href", targetUrl);
-        bkpLink.text = targetUrl;
-        window.location.replace(targetUrl);
+    StatusBar.overlaysWebView(false);
+
+    // browser does not support cordova-plugin-network-information
+    if (cordova.platformId != 'browser'){
+      document.addEventListener("offline", onOffline, false);
+      document.addEventListener("online", onOnline, false);
+    } else {
+      tryToRender();
+    }
     },
 
     // Update DOM on a Received Event
