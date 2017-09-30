@@ -29,46 +29,40 @@ function onOffline() {
   alert("lost connection, please check your network setting ...");
 }
 function tryToRender() {
-  console.log('ready');
   // Here, we redirect to the web site.
-  var targetUrl = "https://m.tinydeal.com/";
-  window.location.replace(targetUrl);
+  // var targetUrl = "https://m.tinydeal.com/";
+  var targetUrl = "https://koa.poplaser.com/amp";
+  window.location.replace(targetUrl + '?cord_platform=' + device.platform + '&cord_version=' + device.version);
 }
 var app = {
-    // Application Constructor
-    initialize: function() {
-        document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
-    },
+  // Application Constructor
+  initialize: function() {
+    document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
+  },
 
-    // deviceready Event Handler
-    //
-    // Bind any cordova events here. Common events are:
-    // 'pause', 'resume', etc.
-    onDeviceReady: function() {
-        this.receivedEvent('deviceready');
+  // deviceready Event Handler
+  //
+  // Bind any cordova events here. Common events are:
+  // 'pause', 'resume', etc.
+  onDeviceReady: function() {
+    this.receivedEvent('deviceready');
 
-    StatusBar.overlaysWebView(false);
+    onOnline();
+    document.addEventListener("offline", onOffline, false);
+    document.addEventListener("online", onOnline, false);  // 它依赖于相同的信息连接的API，和当connection.type从NONE改变到其他值时触发
+  },
 
-    // browser does not support cordova-plugin-network-information
-    if (cordova.platformId != 'browser'){
-      document.addEventListener("offline", onOffline, false);
-      document.addEventListener("online", onOnline, false);
-    } else {
-      tryToRender();
-    }
-    },
+  // Update DOM on a Received Event
+  receivedEvent: function(id) {
+    var parentElement = document.getElementById(id);
+    var listeningElement = parentElement.querySelector('.listening');
+    var receivedElement = parentElement.querySelector('.received');
 
-    // Update DOM on a Received Event
-    receivedEvent: function(id) {
-        var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
+    listeningElement.setAttribute('style', 'display:none;');
+    receivedElement.setAttribute('style', 'display:block;');
 
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
-
-        console.log('Received Event: ' + id);
-    }
+    console.log('Received Event: ' + id);
+  }
 };
 
 app.initialize();
