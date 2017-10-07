@@ -1,54 +1,54 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.tinydeal.m" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-	<name>TinyDeal</name>
-	<description>
-		A sample Apache Cordova application that responds to the deviceready event.
-	</description>
-	<author email="dev@cordova.apache.org" href="http://cordova.io">
-		Apache Cordova Team
-	</author>
-	<content src="index.html" />
-	<preference name="DisallowOverscroll" value="true" />
-	<preference name="android-minSdkVersion" value="14" />
-	<preference name="ShowSplashScreenSpinner" value="false" />
-	<preference name="OverrideUserAgent" value="Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1" />
-	<platform name="android">
-		<icon density="ldpi" src="res/icon/android/icon-36-ldpi.png" />
-		<icon density="mdpi" src="res/icon/android/icon-48-mdpi.png" />
-		<icon density="hdpi" src="res/icon/android/icon-72-hdpi.png" />
-		<icon density="xhdpi" src="res/icon/android/icon-96-xhdpi.png" />
-		<icon density="xxhdpi" src="res/icon/android/icon-144-xxhdpi.png" />
-		<icon density="xxxhdpi" src="res/icon/android/icon-192-xxxhdpi.png" />
-		<splash density="land-ldpi" src="res/screen/android/drawable-land-ldpi-screen.png" />
-		<splash density="land-mdpi" src="res/screen/android/drawable-land-mdpi-screen.png" />
-		<splash density="land-hdpi" src="res/screen/android/drawable-land-hdpi-screen.png" />
-		<splash density="land-xhdpi" src="res/screen/android/drawable-land-xhdpi-screen.png" />
-		<splash density="land-xxhdpi" src="res/screen/android/drawable-land-xxhdpi-screen.png" />
-		<splash density="land-xxxhdpi" src="res/screen/android/drawable-land-xxxhdpi-screen.png" />
-		<splash density="port-ldpi" src="res/screen/android/drawable-port-ldpi-screen.png" />
-		<splash density="port-mdpi" src="res/screen/android/drawable-port-mdpi-screen.png" />
-		<splash density="port-hdpi" src="res/screen/android/drawable-port-hdpi-screen.png" />
-		<splash density="port-xhdpi" src="res/screen/android/drawable-port-xhdpi-screen.png" />
-		<splash density="port-xxhdpi" src="res/screen/android/drawable-port-xxhdpi-screen.png" />
-		<splash density="port-xxxhdpi" src="res/screen/android/drawable-port-xxxhdpi-screen.png" />
-	</platform>
-	<platform name="ios">
-		<icon height="40" src="res/icon/ios/icon-40.png" width="40" />
-		<icon height="80" src="res/icon/ios/icon-40@2x.png" width="80" />
-		<icon height="50" src="res/icon/ios/icon-50.png" width="50" />
-		<icon height="100" src="res/icon/ios/icon-50@2x.png" width="100" />
-		<icon height="57" src="res/icon/ios/icon-57.png" width="57" />
-		<icon height="114" src="res/icon/ios/icon-57@2x.png" width="114" />
-		<icon height="60" src="res/icon/ios/icon-60.png" width="60" />
-		<icon height="120" src="res/icon/ios/icon-60@2x.png" width="120" />
-		<icon height="180" src="res/icon/ios/icon-60@3x.png" width="180" />
-		<icon height="72" src="res/icon/ios/icon-72.png" width="72" />
-		<icon height="144" src="res/icon/ios/icon-72@2x.png" width="144" />
-		<icon height="76" src="res/icon/ios/icon-76.png" width="76" />
-		<icon height="152" src="res/icon/ios/icon-76@2x.png" width="152" />
-		<icon height="29" src="res/icon/ios/icon-small.png" width="29" />
-		<icon height="58" src="res/icon/ios/icon-small@2x.png" width="58" />
-		<icon height="87" src="res/icon/ios/icon-small@3x.png" width="87" />
+<widget id="com.tinydeal.m" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>TinyDeal</name>
+    <description>
+        TinyDeal Direct Online Store
+    </description>
+    <author email="dev@tinydeal.com" href="https://www.tinydeal.com">
+        TinyDeal Development Team
+    </author>
+    <content src="index.html" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="android-minSdkVersion" value="14" />
+    <preference name="ShowSplashScreenSpinner" value="false" />
+    <preference name="OverrideUserAgent" value="Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1" />
+    <platform name="android">
+        <icon density="ldpi" src="res/icon/android/icon-36-ldpi.png" />
+        <icon density="mdpi" src="res/icon/android/icon-48-mdpi.png" />
+        <icon density="hdpi" src="res/icon/android/icon-72-hdpi.png" />
+        <icon density="xhdpi" src="res/icon/android/icon-96-xhdpi.png" />
+        <icon density="xxhdpi" src="res/icon/android/icon-144-xxhdpi.png" />
+        <icon density="xxxhdpi" src="res/icon/android/icon-192-xxxhdpi.png" />
+        <splash density="land-ldpi" src="res/screen/android/drawable-land-ldpi-screen.png" />
+        <splash density="land-mdpi" src="res/screen/android/drawable-land-mdpi-screen.png" />
+        <splash density="land-hdpi" src="res/screen/android/drawable-land-hdpi-screen.png" />
+        <splash density="land-xhdpi" src="res/screen/android/drawable-land-xhdpi-screen.png" />
+        <splash density="land-xxhdpi" src="res/screen/android/drawable-land-xxhdpi-screen.png" />
+        <splash density="land-xxxhdpi" src="res/screen/android/drawable-land-xxxhdpi-screen.png" />
+        <splash density="port-ldpi" src="res/screen/android/drawable-port-ldpi-screen.png" />
+        <splash density="port-mdpi" src="res/screen/android/drawable-port-mdpi-screen.png" />
+        <splash density="port-hdpi" src="res/screen/android/drawable-port-hdpi-screen.png" />
+        <splash density="port-xhdpi" src="res/screen/android/drawable-port-xhdpi-screen.png" />
+        <splash density="port-xxhdpi" src="res/screen/android/drawable-port-xxhdpi-screen.png" />
+        <splash density="port-xxxhdpi" src="res/screen/android/drawable-port-xxxhdpi-screen.png" />
+    </platform>
+    <platform name="ios">
+        <icon height="40" src="res/icon/ios/icon-40.png" width="40" />
+        <icon height="80" src="res/icon/ios/icon-40@2x.png" width="80" />
+        <icon height="50" src="res/icon/ios/icon-50.png" width="50" />
+        <icon height="100" src="res/icon/ios/icon-50@2x.png" width="100" />
+        <icon height="57" src="res/icon/ios/icon-57.png" width="57" />
+        <icon height="114" src="res/icon/ios/icon-57@2x.png" width="114" />
+        <icon height="60" src="res/icon/ios/icon-60.png" width="60" />
+        <icon height="120" src="res/icon/ios/icon-60@2x.png" width="120" />
+        <icon height="180" src="res/icon/ios/icon-60@3x.png" width="180" />
+        <icon height="72" src="res/icon/ios/icon-72.png" width="72" />
+        <icon height="144" src="res/icon/ios/icon-72@2x.png" width="144" />
+        <icon height="76" src="res/icon/ios/icon-76.png" width="76" />
+        <icon height="152" src="res/icon/ios/icon-76@2x.png" width="152" />
+        <icon height="29" src="res/icon/ios/icon-small.png" width="29" />
+        <icon height="58" src="res/icon/ios/icon-small@2x.png" width="58" />
+        <icon height="87" src="res/icon/ios/icon-small@3x.png" width="87" />
         <splash src="res/screen/ios/Default~iphone.png" width="320" height="480"/>
         <splash src="res/screen/ios/Default@2x~iphone.png" width="640" height="960"/>
         <splash src="res/screen/ios/Default-Portrait~ipad.png" width="768" height="1024"/>
@@ -60,25 +60,25 @@
         <splash src="res/screen/ios/Default-736h.png" width="1242" height="2208"/>
         <splash src="res/screen/ios/Default-Landscape-736h.png" width="2208" height="1242"/>
     </platform>
-	<access origin="*" />
-	<allow-intent href="http://*/*" />
-	<allow-intent href="https://*/*" />
-	<allow-intent href="tel:*" />
-	<allow-intent href="sms:*" />
-	<allow-intent href="mailto:*" />
-	<allow-intent href="geo:*" />
-	<allow-navigation href="*" />
-	<platform name="android">
-		<allow-intent href="market:*" />
-	</platform>
-	<platform name="ios">
-		<allow-intent href="itms:*" />
-		<allow-intent href="itms-apps:*" />
-	</platform>
-	<engine name="android" spec="^6.2.3" />
-	<engine name="browser" spec="^4.1.0" />
-	<plugin name="cordova-plugin-device" spec="^1.1.6" />
-	<plugin name="cordova-plugin-network-information" spec="^1.3.3" />
-	<plugin name="cordova-plugin-splashscreen" spec="^4.0.3" />
-	<plugin name="cordova-plugin-whitelist" spec="^1.3.2" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-navigation href="*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <engine name="android" spec="^6.2.3" />
+    <engine name="browser" spec="^4.1.0" />
+    <plugin name="cordova-plugin-device" spec="^1.1.6" />
+    <plugin name="cordova-plugin-network-information" spec="^1.3.3" />
+    <plugin name="cordova-plugin-splashscreen" spec="^4.0.3" />
+    <plugin name="cordova-plugin-whitelist" spec="^1.3.2" />
 </widget>

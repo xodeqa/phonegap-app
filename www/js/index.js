@@ -30,10 +30,11 @@ function onOffline() {
 }
 function tryToRender() {
   // Here, we redirect to the web site.
-  // var targetUrl = "https://m.tinydeal.com/";
   var targetUrl = "https://m.tinydeal.com/";
   window.location.replace(targetUrl + '?cord_platform=' + device.platform + '&cord_version=' + device.version);
 }
+
+
 var app = {
   // Application Constructor
   initialize: function() {
